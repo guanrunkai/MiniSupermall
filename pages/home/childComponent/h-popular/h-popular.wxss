@@ -1,0 +1,5 @@
+/* pages/home/childComponent/h-popular/h-popular.wxss */
+.popular image{
+  width: 100%;
+  height: 400rpx;
+}

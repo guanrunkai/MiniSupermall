@@ -1,0 +1,7 @@
+/* pages/detail/detail.wxss */
+.detail{
+  height: calc(100% - 120rpx);
+}
+.swiper swiper{
+  height: 700rpx;
+}

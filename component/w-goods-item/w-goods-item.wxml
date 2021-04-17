@@ -1,0 +1,9 @@
+<!--component/w-goods-item/w-goods-item.wxml-->
+<view class="good-list-item" bindtap="itemClick">
+     <image class="image" src="{{item.show.img||item.image||item.img}}"></image>   
+     <view class="goods-list-test">
+      <p class="title">{{item.title}}</p>
+      <text class="price">$ {{item.price}}</text>
+      <text class="cfav">⭐{{item.cfav}}</text>
+     </view>
+</view>

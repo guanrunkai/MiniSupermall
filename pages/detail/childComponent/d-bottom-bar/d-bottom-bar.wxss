@@ -1,0 +1,49 @@
+/* pages/detail/childComponent/d-bottom-bar/d-bottom-bar.wxss */
+.bottom-bar{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 120rpx;
+  font-size: 30rpx;
+  box-shadow: 0 -1px 1px rgba(100, 100, 100, .2);
+  
+}
+.bar-item{
+  flex: 1;
+  display: flex;
+}
+.left-item,.right-item{
+  flex: 1;
+  text-align: center;
+}
+.bar-left .bar-right{
+  flex: 1;
+  
+}
+.left-item {
+  font-size: 28rpx;
+  background-color: white;
+}
+
+.left-item image {
+  margin-top: 20rpx;
+}
+
+.left-item image {
+  width: 44rpx;
+  height: 44rpx;
+}
+.right-item {
+  line-height: 120rpx;
+}
+
+.addToCart {
+  background: #ffe817;
+}
+
+.buy {
+  background: #ff5777;
+  color: #fff;
+}

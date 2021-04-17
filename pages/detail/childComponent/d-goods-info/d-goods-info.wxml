@@ -1,0 +1,32 @@
+<!--pages/detail/childComponent/d-goods-info/d-goods-info.wxml-->
+<view class="detail-goods">
+
+<text class="goods-title">
+{{goods.title}}
+</text>
+
+<view class="goods-price">
+  <text class="new-price">{{goods.newPrice}}</text>
+  <text class="old-price">{{goods.oldPrice}}</text>
+  <text class="discount">{{goods.discount}}</text>
+</view>
+<view class="goods-otherInfo">
+<text class="column">{{goods.columns[0]}}</text>
+<text class="column">{{goods.columns[1]}}</text>
+<text class="column">{{goods.columns[2]}}</text>
+</view>
+<view class="goods-services">
+  <block wx:for="{{goods.services}}" 
+         class="goods-item" 
+          wx:key="index">
+           <!-- if 判断是否显示 延误必赔 -->
+          <block wx:if="{{index!==0}}"> 
+    <image class="goods-services-icon" 
+           src="{{item.icon}}"></image>
+<text class="goods-services-name">{{item.name}}</text>
+</block>
+  </block>
+
+</view>
+
+</view>

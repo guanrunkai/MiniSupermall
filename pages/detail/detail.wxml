@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view 
+     class="detail"
+     scroll-y
+>
+<!-- 商品轮播图展示 -->
+<w-swiper list="{{topImages}}" class="swiper"/>
+
+<!-- 商品标题 价格 信息 展示 -->
+<d-goods-info goods="{{goods}}"/>
+
+<!-- 商铺 评分栏 展示 -->
+<d-shops-info shops="{{shops}}"/>
+
+<!-- 商铺商品穿着效果展示 -->
+<d-detail-info detailInfo="{{detailInfo}}"/>
+
+<!-- 商品尺码信息展示 -->
+<d-params-info paramsInfo="{{paramsInfo}}"/>
+
+<!-- 商品评论信息展示 -->
+<d-comment-info commentInfo="{{commentInfo}}"/>
+
+<!-- 推荐商品展示 -->
+<d-recommends-info recommends="{{recommends}}"/>
+
+<!-- 返回顶部按钮 -->
+<w-back-top bindtap="handleBackTop"
+            wx:if="{{isBackTop}}"/>
+</scroll-view>
+
+<d-bottom-bar bind:AddCart="onAddCart"/>

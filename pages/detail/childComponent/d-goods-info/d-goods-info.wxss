@@ -1,0 +1,65 @@
+/* pages/detail/childComponent/d-goods-info/d-goods-info.wxss */
+.detail-goods{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 33rpx;
+}
+.goods-title{
+  font-size: 35rpx;
+ padding: 0 8px;
+}
+.goods-price{
+  margin-top: 20rpx;
+}
+.new-price{
+  color: #ff5777;
+}
+.old-price{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  text-decoration:line-through
+}
+.discount{
+  width: 30rpx;
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  background-color: #ff5777;
+  color: white;
+  border-radius: 20%;
+  margin-bottom: 20rpx;
+  position: relative;
+  top: -20rpx;
+}
+.goods-otherInfo{
+  
+  display: flex;
+  font-size: 25rpx;
+  color: gray;
+  margin-top: 25rpx;
+  justify-content:space-between;
+  
+  border-bottom: 2rpx solid rgba(100,100,100,0.1);
+}
+.column{
+  display: flex;
+  
+}
+.goods-services{
+  margin-top: 50rpx;
+  display: flex;
+  font-size: 20rpx;
+  justify-content: space-between;
+  
+}
+
+.goods-services-icon{
+  width: 40rpx;
+  height: 40rpx;
+  
+}
+.goods-services-name{
+  margin-left: -10rpx;
+  position: relative;
+  top:6rpx;
+  left:-15rpx;
+}

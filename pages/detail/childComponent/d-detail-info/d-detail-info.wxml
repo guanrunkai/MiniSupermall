@@ -1,0 +1,21 @@
+<!--pages/detail/childComponent/d-detail-info/d-detail-info.wxml-->
+<view>
+  <view class="head">
+    <view class="head line"></view>
+    <view class="desc">{{detailInfo.desc}}</view>
+    <view class="bottom line"></view>
+  </view>
+  <view class="content">
+  <block wx:for="{{detailInfo.detailImage}}"
+         wx:for-item="outerItem"
+        wx:key="item">
+        <text class="title">{{outerItem.key}}</text>
+ 
+  <block wx:for="{{outerItem.list}}"
+         wx:for-item="innerItem"
+         wx:key="index">
+    <image src="{{innerItem}}" mode="widthFix" class="content-image"></image>
+  </block>
+ </block>
+</view>
+</view>

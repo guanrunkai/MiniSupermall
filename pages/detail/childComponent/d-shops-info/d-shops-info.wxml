@@ -1,0 +1,34 @@
+<!--pages/detail/childComponent/d-shops-info.wxml-->
+<wxs module="countFilter" src="../../../../component/w-filter/w-filter.wxs"></wxs>
+<view class="shop-info">
+  <view class="shop-top">
+    <image class="shop-logo" src="{{shops.logo}}"></image>
+    <text class="shop-name">{{shops.name}}</text>
+  </view>
+  <view class="shop-middle">
+    <view class="shop-middle-left">
+      <view class="countAll">
+        <text class="All-count">{{countFilter.sellCountFilter(shops.sells)}}\n</text>
+        <text class="All-title">总销量</text>
+      </view>
+      <view class="goodsAll">
+        <text class="All-count">{{shops.goodsCount}}\n</text>
+        <text class="All-title">全部宝贝</text>
+      </view>
+
+    </view>
+    <view class="shop-middle-right">
+      <block wx:for="{{shops.score}}" wx:key="item">
+        <view class="shops-score">
+          <text class="shops-score-name">{{item.name}}</text>
+          <text class="shops-score-score {{item.isBetter?'yes':'no'}}">{{item.score}}</text>
+          <text class="shops-score-title {{item.isBetter?'yes':'no'}}">{{item.isBetter?'高':'低'}}</text>
+        </view>
+
+      </block>
+    </view>
+  </view>
+  <view class="shops-button">
+    <button size="mini">进店逛逛</button>
+  </view>
+</view>

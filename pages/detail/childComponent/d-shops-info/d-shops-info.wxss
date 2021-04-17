@@ -1,0 +1,73 @@
+/* pages/detail/childComponent/d-shops-info.wxss */
+.shop-info{
+  border-bottom: 8rpx solid rgba(100, 100, 100, .2);
+  border-top: 8rpx solid rgba(100, 100, 100, .2);
+}
+.shop-top{
+  margin-top: 25rpx;
+  margin-left: 40rpx;
+}
+.shop-logo{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1px solid rgba(100, 100, 100, .2);
+  border-radius: 45%;
+}
+.shop-name{
+  font-size: 35rpx;
+  position: relative;
+  top:-40rpx;
+  left: 15rpx;
+}
+.shop-middle-left{
+  margin-top:50rpx ;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  display: flex;
+  text-align: center;
+  
+  justify-content: space-evenly;
+}
+.All-count{
+  font-size: 40rpx;
+  margin-bottom:25rpx ;
+}
+.All-title{
+  font-size: 25rpx;
+}
+.goodsAll{
+  margin-left: 50rpx;
+}
+.shop-middle{
+  display: flex;
+}
+.shop-middle-right{
+  border-left: 1px solid rgba(100, 100, 100, .2); 
+  margin-left: 20rpx;
+}
+.shops-score{
+  margin-left: 70rpx;
+  font-size: 25rpx;
+  margin-top: 30rpx;
+  display: flex;
+}
+.shops-score .yes{
+  color:#ff5777
+}
+.shops-score .no{
+  color:green
+}
+.shops-score-score{
+  flex: 1;
+  margin-left: 20rpx;
+}
+.shops-score-title{
+  margin-left: 20rpx;
+  
+}
+.shops-button{
+  margin-top: 50rpx;
+  margin-left: 250rpx;
+  border-radius: 45%;
+  margin-bottom: 40rpx;
+}

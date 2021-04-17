@@ -1,0 +1,19 @@
+/* pages/detail/childComponent/d-detail-info/d-detail-info.wxss */
+.bottom{
+float: right;
+}
+.line{
+ width: 180rpx;
+height: 1rpx;
+background: #666;
+margin: 30rpx 0;
+/* position: relative;  */
+}
+.head{
+  font-size: 30rpx;
+}
+.content-image{
+  width: 98%;
+  height: auto;
+  margin-left: 7rpx;
+}

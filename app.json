@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/category/category",
+    "pages/shopping/shopping",
+    "pages/profile/profile",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      
+      {
+        
+        
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/img/tabbar/home.png",
+        "selectedIconPath": "assets/img/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/img/tabbar/category.png",
+        "selectedIconPath": "assets/img/tabbar/category_active.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "购物车",
+        "iconPath": "assets/img/tabbar/shopping.png",
+        "selectedIconPath": "assets/img/tabbar/shopping_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/img/tabbar/profile.png",
+        "selectedIconPath": "assets/img/tabbar/profile_active.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "购物街",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

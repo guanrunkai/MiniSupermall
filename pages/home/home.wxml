@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+ <!-- 轮播图页面展示 -->
+<w-swiper list="{{banners}}" class="swiper"/>
+ <!-- 推荐页面展示  -->
+ <h-recommend recommends="{{recommends}}"
+              bind:imageload="handlerImageLoad"></h-recommend>
+ <!-- 流行页面展示 -->
+ <h-popular/>
+ <!-- 导航栏  三种商品类型 切换 -->
+ <w-tab-control titles="{{['新款','流行','精选']}}"
+                bind:tabclick="handlerChangeGoods"
+                class="{{isTabFixed?'fixed':''}}"
+                id="tab-control"/>
+ <w-tab-control titles="{{['新款','流行','精选']}}"
+                wx:if="{{isTabFixed}}"/>
+ <!-- 下方商品信息展示 -->
+ <w-goods goods="{{goods[currentType].list}}"/>
+ <!-- 返回顶部按钮 -->
+ <w-back-top bindtap="backTop"
+             wx:if="{{showBackTop}}"/>
+     
+  
